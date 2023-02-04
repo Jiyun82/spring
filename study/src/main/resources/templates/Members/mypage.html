@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h1>마이페이지</h1>
+        <h2 th:text="'아이디: ' + ${member.id}"></h2>
+        <a href="/posts/showMyPosts">내가 쓴 게시글</a>
+    </div>
+</div>
+</body>
+</html>

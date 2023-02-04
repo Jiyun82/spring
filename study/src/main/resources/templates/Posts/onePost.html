@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="'제목: '+${post.title}"></h1>
+    <h3 th:text="'작성자: '+${post.id}"></h3>
+    <pre th:text="${post.content}"></pre>
+    <a th:if="${member != null && post.id == member.id}" th:href="@{/posts/write}">수정</a>
+</body>
+</html>
